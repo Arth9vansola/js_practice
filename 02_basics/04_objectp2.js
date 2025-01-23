@@ -60,3 +60,15 @@ console.log(instaUser.hasOwnProperty('country'));
 
 const tiger = Object.keys(instaUser)
 console.log(tiger[2]);
+
+// destructuring object
+
+const opt = {
+    name: "avi",
+    age: 25,
+    college: "IIT",
+}
+
+const {age : a} = opt; // if we want then we can assign age to another value by that we can ask for age
+console.log(age); // give same as a ---> (25)
+// console.log(a);
