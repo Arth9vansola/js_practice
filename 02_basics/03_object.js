@@ -39,3 +39,5 @@ obj.greet2 = function(){
     console.log(`Hello beta, ${this.name}`);
 }
 console.log(obj.greet2());
+
+
