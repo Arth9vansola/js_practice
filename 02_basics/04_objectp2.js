@@ -70,5 +70,5 @@ const opt = {
 }
 
 const {age : a} = opt; // if we want then we can assign age to another value by that we can ask for age
-console.log(age); // give same as a ---> (25)
-// console.log(a);
+// console.log(age); // give same as a ---> (25)
+console.log(a);
