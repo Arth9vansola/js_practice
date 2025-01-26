@@ -15,11 +15,11 @@ console.log(myName.toUpperCase());
 console.log(myName.charAt(3));
 console.log(myName.indexOf('r'));
 
-const newString = myName.substring(1,3)
+const newString = myName.substring(1,3) // 1) If either or both of the arguments are negative or NaN, the substring() method treats them as if they were 0. 2) The substring() method swaps its two arguments if indexStart is greater than indexEnd, meaning that a string is still returned. The slice() method returns an empty string if this is the case.
 console.log(newString);
 
 const anotherString = myName.slice(-3,3)
-console.log(anotherString);
+console.log(anotherString); // in slice negative value is working from end of the string
 
 
 // trim method
