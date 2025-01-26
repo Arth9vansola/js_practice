@@ -1,5 +1,5 @@
 // use of this
-// "this" is a reference to the object that is executing the current context
+// this is a reference to the object that is executing the current context
 
 const person = {
     username: 'john',
