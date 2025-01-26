@@ -1,5 +1,5 @@
 // use of this
-// this is a reference to the object that is executing the current context
+// "this" is a reference to the object that is executing the current context
 
 const person = {
     username: 'john',
@@ -9,8 +9,8 @@ const person = {
         // console.log(this)
     }
 }
-person.greet(); // output : welcome back to site, arth
-person.username = "arth" // output : welcome back to site, arth
+person.greet(); // output : welcome back to site, john
+person.username = "arth" // changing the username
 person.greet(); // output : welcome back to site, arth
 console.log(this); // output : {}
 
