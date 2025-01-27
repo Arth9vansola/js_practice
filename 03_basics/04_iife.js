@@ -12,7 +12,7 @@
      console.log("my name is arth");
 })(); // always apply semicolon after IIFE because due to this another iife know that first iife where is ended.
 
-( (naam)=>{
+((naam)=>{
     console.log(`Roses are red,
 Violets are blue,
 JavaScript is fun,
