@@ -1,4 +1,4 @@
-// for of is used for "arrays" and "strings" mostly where we deal with index based iteration here we directly get values
+// for of is used for 🎲"arrays"🎲imp and "strings" mostly where we deal with index based iteration here we directly get values
 
 const arr = [1, 2, 3, 4, 5];
 for (let element of arr) {
