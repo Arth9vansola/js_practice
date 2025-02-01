@@ -1,5 +1,6 @@
 // filter is a method which is removes the flaws of for each loop like it can't store the value of array but filter do.
 // it is also callback function which is used to filter the array and return the new array.
+// it give values in boolean form like true or false.
 
 const arr = [1, 2, 3, 4, 5];
 const even = arr.filter((val)=>(val>3)) // implicit return
