@@ -1,4 +1,4 @@
-// for each loop is also used for array but it give you direct value of array
+// for each loop is also used for array but it give you direct value of given array
 
 // way 1:
 const arr = [1, 2, 3, 4, 5];
