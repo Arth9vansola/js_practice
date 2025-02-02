@@ -1,3 +1,5 @@
+//without return statement
+
 function addTwoNum(a,b){
     console.log(a+b);
 }
@@ -18,8 +20,7 @@ console.log("showcase:", showcase); // output : 11
 
 function userLogin (username = "kumar"){
     if(!username){
-        console.log("Please provide username");
-        return ;
+        return `Please provide username`;
     }
     return `Welcome ${username}`;
 }
@@ -31,7 +32,8 @@ console.log(userLogin("arth")); // output : Welcome arth
 function addInCart(...items){
     return items
 }
-console.log(addInCart("laptop","mobile","watch")); // output : [ 'laptop', 'mobile', 'watch' ]
+const care = addInCart("laptop","mobile","watch");
+console.log(care); // output : [ 'laptop', 'mobile', 'watch' ]
 
 // 2) in multiple parameters
 
