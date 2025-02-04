@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+    .black {
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="black">
+        <h1 id="title" class="heading">Dealing with DOM</h1>
+        <div class = "parent">
+           <div class = "child">Child 1</div>  
+           <div class = "child">Child 2</div>  
+           <div class = "child">Child 3</div>  
+           <div class = "child">Child 4</div>  
+        </div>
+</body>
+<script>
+    const op = document.createElement('div');
+    console.log(op);
+    op.id = 'new';
+    op.className = 'black';
+    op.style.backgroundColor = 'red';
+    op.style.color = 'yellow';
+    const tar = document.createTextNode("hello bro");
+    op.appendChild(tar);
+    document.body.appendChild(op);
+
+    const parent = document.querySelector('.parent');
+    for(let i = 0; i < parent.children.length; i++){
+        console.log(parent.children[i]);
+    }
+</script>
+</html>
