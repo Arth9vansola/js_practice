@@ -11,8 +11,7 @@
     }
     </style>
 </head>
-<body>
-    <div class="black">
+<body class="black">
         <h1 id="title" class="heading">Dealing with DOM</h1>
         <div class = "parent">
            <div class = "child">Child 1</div>  
@@ -22,6 +21,7 @@
         </div>
 </body>
 <script>
+    // creating element
     const op = document.createElement('div');
     console.log(op);
     op.id = 'new';
@@ -30,11 +30,27 @@
     op.style.color = 'yellow';
     const tar = document.createTextNode("hello bro");
     op.appendChild(tar);
-    document.body.appendChild(op);
+    document.querySelector(".parent").appendChild(op);
 
     const parent = document.querySelector('.parent');
-    for(let i = 0; i < parent.children.length; i++){
-        console.log(parent.children[i]);
-    }
+    // for(let i = 0; i < parent.children.length; i++){
+    //     console.log(parent.children[i]);
+    // }
+   
+   //edit an element
+   const li = document.querySelector('.child:nth-child(2)');
+   const lisec = document.createElement('div');
+   lisec.className = 'child';
+   lisec.textContent = 'second item';
+   console.log(lisec)
+   li.replaceWith(lisec);
+    // console.log(parent.children[5])
+    // li.outerHTML = '<div class="child">second item</div>';
+
+    //remove an element
+    const lam = document.querySelector('.child:nth-child(4)');
+    lam.remove();
+
+
 </script>
 </html>
