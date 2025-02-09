@@ -1,12 +1,12 @@
 // for loop
 
 for (let a = 0; a < 5; a++) {
-    // console.log(a);
+    console.log(a);
 }
 
 for (let i = 1; i <=5; i++) {
     for (let j = 1; j <= 10; j++) {
-        // console.log(`${i} * ${j} = ${i * j}`);
+        console.log(`${i} * ${j} = ${i * j}`);
     }
 } 
 
