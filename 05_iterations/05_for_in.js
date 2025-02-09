@@ -1,4 +1,4 @@
-// for in loop ::::---> used for object and array, it give you direct keys of object and index of array
+// for in loop ::::---> used for object and array, it give you direct values of object and values of array
 
 // for object
 const obj = {
