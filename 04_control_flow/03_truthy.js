@@ -18,14 +18,18 @@ if(Object.keys(car).length === 0){
 }
 
 // nullish coalescing operator(??) : null undefined
+// it is used when you fetch data from the data base and there is null value sometimes arrived that time another value helps and program to not throw an error
 
 let val1
-// val1 =5 ?? 10
-// val1 = null ?? 10
-// val1 = undefined ?? 10
-val1 = null ?? 10 ?? 50
+val1 =5 ?? 10
+val2 = null ?? 10
+val3 = undefined ?? 10
+val4 = null ?? 10 ?? 50
 
 console.log(val1) 
+console.log(val2) 
+console.log(val3) 
+console.log(val4) 
 
 // ternary operator
 // condition ? true : false
