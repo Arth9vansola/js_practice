@@ -7,9 +7,9 @@ form.addEventListener("submit",(e)=>{
   const result = document.querySelector("#results")
 
   if(height === '' || height < 0 || isNaN(height)){
-    return `please enter valid height:${height}`
+    result.innerHTML = `please enter valid height:${height}`
   }else if(weight === '' || weight < 0 || isNaN(weight)){
-    return `please enter valid weight:${weight}`
+    result.innerHTML = `please enter valid weight:${weight}`
   }else{
     const bmi = (weight / ((height * height) / 10000)).toFixed(2)
     if(bmi < 18.6){
