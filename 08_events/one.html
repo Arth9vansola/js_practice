@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #apple {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        #banana {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        #cherry {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="over">
+        <div id="apple"><img src="https://images.pexels.com/photos/30082117/pexels-photo-30082117/free-photo-of-pouring-traditional-tea-in-ornate-setting.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1"></div>
+        <div id="banana"><img src="https://images.pexels.com/photos/18049026/pexels-photo-18049026/free-photo-of-woman-in-a-black-blouse-and-jeans-with-a-pink-ball.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1"></div>
+        <div id="cherry"><img src="https://images.pexels.com/photos/29969383/pexels-photo-29969383/free-photo-of-serene-sunset-over-lake-ontario-with-swans.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1"></div>
+        <div id="game"><a href="www.google.com">gogole</a></div>
+    </div>
+
+</body>
+<script>
+    // document.getElementById('over').addEventListener('click', function(e) {
+    //     // e.stopPropagation()// to stop event propagation from child to parent
+    //     console.log('Over');    
+    // },false); // if there is false so it will known as event bubbling
+
+    // document.getElementById('banana').addEventListener('click', function() {
+    //     alert('banana');
+    // },true); // if there is false so it will known as event capturing
+
+    // document.getElementById('game').addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     console.log('Game');
+    // },false); // if there is false so it will known as event capturing
+
+    document.getElementById('over').addEventListener('click', function(e) {
+         let removeIt = e.target.parentNode
+         removeIt.remove()  
+    },false); 
+</script>
+</html>
