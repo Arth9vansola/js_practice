@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color: white;">
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+ 
+
+ let intervalId = null; // Use null instead of 0 for better clarity
+
+const start = document.querySelector('#start');
+const stop = document.querySelector('#stop');
+
+start.addEventListener('click', function () {
+    if (!intervalId) { // Prevent multiple intervals
+        intervalId = setInterval(function () {
+            console.log('Chai is ready');
+        }, 500);
+    }
+});
+
+stop.addEventListener('click', function () {
+    clearInterval(intervalId);
+    intervalId = null; // Reset intervalId
+});
+
+</script>
+</html>
