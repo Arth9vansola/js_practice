@@ -1,6 +1,6 @@
 // js is prototype based language and classes are only syntactic sugar
-// In properties , we can not pass value .length(), .toUpperCase() etc
-// In methods(function), we can pass value map(func), filter(func) etc
+// In properties , we can not pass value .length(), .toUpperCase() etc or else it like noun here we just assingn the value
+// In methods(function), we can pass value map(func), filter(func) etc or else it like verb here we perform the action
 
 // ------> new is constructor function <------
 // 1)  when we write "new" it will create new empty object {}
