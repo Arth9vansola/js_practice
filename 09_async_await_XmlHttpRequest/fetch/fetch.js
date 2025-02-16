@@ -21,7 +21,7 @@ const promiseFive = new Promise(function(resolve, reject){
     handlepromiseFive()
 
 
-fetch('https://api.github.com/users/hiteshchoudhary') // here fetch come before the promiseFive because it has special micro task queue / priority queue which execurte fetch request first without waiting for the promiseFive to complete and this is the beauty of fetch
+fetch('https://api.github.com/users/hiteshchoudhary') // here fetch come before the promiseFive because it has special (micro task queue / priority queue) which execute fetch request first without waiting for the promiseFive to complete and this is the beauty of fetch
 .then((response)=>{
     return response.json()
 })
