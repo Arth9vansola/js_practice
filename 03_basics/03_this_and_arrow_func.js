@@ -24,10 +24,10 @@ arth()
 // implicit return --> not using return keyword
 // if you use paranthesis then there is no need to write return keyword but if you use curly braces then you have to write return keyword
 
-const add = (a, b) => (a + b)
+const add = (a, b) => (a + b) // implicit return
 console.log(add(10, 20)); // output : 30
 
-const add1 = (a, b) => {
+const add1 = (a, b) => { // explicit return
     return a + b;
 }
 console.log(add1(10, 20)); // output : 30
