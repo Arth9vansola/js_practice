@@ -24,7 +24,7 @@
     if (xhr.readyState === 4) {
             const data = JSON.parse(this.responseText)
             const pf = data.followers;
-            document.querySelector('.followers').textContent = `Followers: ${pf}`;
+            document.querySelector('.followers').innerHTML = `<span>Followers: ${pf}</span>`;
         }
       }  
     xhr.send();
