@@ -39,7 +39,7 @@
 // const promiseFour = new Promise(function(resolve, reject){
 //     setTimeout(()=>{
 //         let er = false
-//         if(!er){// falsy condition hogi to hi run hoga varna run nahi hoga when ! is there  in condition
+//         if(!er){// falsy condition hogi to hi run hoga varna run nahi hoga when ! is present  in condition
 //             resolve({name: "Avi", age: 21})
 //         }else{
 //             reject("daya kuch to gadbad hai")
