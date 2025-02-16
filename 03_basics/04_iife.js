@@ -4,7 +4,7 @@
 
 // The first part contains the anonymous function and the second part is used to call the function immediately.
 
-// it is used to avoid polluting the global scope and it can be used to create a private scope And due to pollution of gloabal scope it can't affected that why it is used.
+// it is used to avoid polluting the global scope and it can be used to create a private scope And due to pollution of global scope it can't affected that why it is used.
 
 
 // unnamed iife
