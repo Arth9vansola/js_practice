@@ -31,12 +31,12 @@ one();
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ interesting hoisting just overview $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 addOne(10) // it can't show error because it is function declaration
-function addOne(num){
+function addOne(num){//---> function declaration
     return num + 1;
 }
 
 addTwo(10) // ReferenceError: Cannot access 'addTwo' before initialization
-const addTwo = function(num){
+const addTwo = function(num){// ------> function expression
     return num + 2;
 }
 
