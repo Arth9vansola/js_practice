@@ -17,7 +17,8 @@
             //requirement
             document
                 .querySelector('button')
-                .addEventListener('click', this.handleClick.bind(this))
+                .addEventListener('click', this.handleClick.bind(this)) 
+            // Why .bind(this)? By default, event listeners change the value of this to refer to the element that triggered the event (i.e., the <button> element).this.handleClick.bind(this) forces this inside handleClick to always refer to the React class instance.
 
         }
         handleClick(){
