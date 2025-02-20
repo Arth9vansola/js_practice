@@ -22,7 +22,6 @@ console.log(Object.getOwnPropertyDescriptor(tea, "name"));
 
 for (let [key, value] of Object.entries(tea)) {
     if (typeof value !== 'function') {
-        
         console.log(`${key} : ${value}`);
     }
 }
