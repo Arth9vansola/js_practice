@@ -5,6 +5,7 @@ let z = 100
 if(true){
     let a = 10;
     const b = 20;
+    
     var c = 30;
     let z = 50;
     console.log(z); // output : 50
